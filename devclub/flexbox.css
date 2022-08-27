@@ -1,0 +1,53 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+div {
+    background: rgb(135, 135, 135);
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display:flex;
+
+    flex-direction:row;  /* se estiver como row( horizontal )  o eixo primairio é horizontal e o eixo segundario é vertical,
+    mas se estiver como colum (coluna) o eixo primario é vertival e o eixo secundario é horizontal */
+
+    flex-wrap: wrap;
+
+   
+    /*   flex-flow: é a mesma coisa que   flex-direction: ; e
+    flex-wrap: ;,  usado para economisar  linhas*/
+
+  justify-content:center; 
+
+   align-items:center;   /*  alinha os itens alinha no eixo segundario*/
+
+ 
+
+    gap:10px ; /*espaçamento entre o sitens*/
+}
+
+section {
+  
+    background: rgb(147, 1, 191);
+   /* width: 200px;
+    height: 300px;*/
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+   
+    
+
+
+}
+
+h1 {
+
+    margin-bottom: 20px;
+}

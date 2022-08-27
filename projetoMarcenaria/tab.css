@@ -1,0 +1,93 @@
+.artigos-home { 
+    padding:0.5em; 
+    width:100%;
+    float:left; 
+    margin:0px auto; 
+    background: #e9ecf0;
+}
+.artigos-home ul { 
+    display:block; 
+    margin-bottom:10px; 
+}
+.artigos-home ul li { 
+    list-style:none; 
+    background-color:#fff; 
+    padding:8px 20px; 
+    border-radius:5px; 
+    margin:3px; 
+    cursor:pointer; 
+    display:flex; 
+    float:left; 
+}
+.artigos-home ul li.active { 
+    background-color:#03a9f4; 
+    color:#fff;  
+}
+.row-articles { 
+    width:100%; 
+    display:flex; 
+    flex-wrap:wrap; 
+}
+.row-articles .itemBox { 
+    position:relative; 
+    width:100%; 
+    height:auto; 
+    margin:5px; 
+    background-color:#fff; 
+    padding:0.8em;
+    border-radius:4px; 
+    overflow:hidden; 
+    display:grid; 
+}
+.row-articles .itemBox img { 
+    width:100%; 
+    margin-bottom:6px; 
+    float:left; 
+}
+.row-articles .itemBox h1 { 
+    color:#4297cb; 
+    font-size:1.5em; 
+    margin-bottom:5px; 
+    padding-bottom:5px; 
+    border-bottom:1px #f4f4f4 solid;
+    width:100%;
+    float:left;
+}
+.row-articles .itemBox p { 
+    
+    width:100%;
+    float:left;
+    margin-bottom:10px;
+    color:#444; 
+    font-size:1em; 
+}
+.row-articles .itemBox a { 
+    
+    text-decoration:none;
+    color:#4297cb; 
+    font-size:1em; 
+}
+.row-articles .itemBox a:hover { 
+    
+    text-decoration:underline;
+    color:#444; 
+}
+/*Responsivo*/
+/*480PX BREAKPOINT*/
+@media (min-width:30em){
+}
+/*600PX BREAKPOINT*/
+@media (min-width:37em){
+}
+/*768PX BREAKPOINT*/
+@media (min-width:48em){
+.row-articles .itemBox { width:31.8%; }
+}
+/*960PX BREAKPOINT*/
+@media (min-width:60em){
+}
+/*1280PX BREAKPOINT*/
+@media (min-width:80em){
+.artigos-home ul    { display:flex; }
+.artigos-home ul li { display:block; }
+}

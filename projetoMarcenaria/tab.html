@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tab.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('.lista').click(function(){
+           const value = $(this).attr('data-filter');
+           
+           if (value == 'all'){
+           	   $('.itemBox').show('1000');
+           }else{
+           	   $('.itemBox').not('.'+value).hide('1000');
+           	   $('.itemBox').filter('.'+value).show('1000');
+           } 
+		})
+        
+        //Add Class And Remove class
+        $('.lista').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+	}) 
+</script>
+Veja o Resultado!
+    <title>Document</title>
+</head>
+<body>
+    <section class="artigos-home">
+        <ul>
+            
+          
+            <li class="lista" data-filter="html5"> Html5</li>
+            <li class="lista" data-filter="css3"> Css3</li>
+            <li class="lista" data-filter="jquery"> jQuery</li>
+            <li class="lista" data-filter="wordpress"> WordPress</li>
+            <li class="lista" data-filter="javascript"> Javascript</li>
+        </ul>
+        
+        <div class="row-articles">
+        
+            <article class="itemBox html5"> 
+               
+              <img src="images/html-article.jpg"> 
+              <h1>Html</h1>
+              <p>Onde e quando usamos a tags article no html</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a> 
+            
+            </article>
+            <article class="itemBox jquery"> 
+              <img src="images/carrossel-responsivo-vertical-com-jquery.jpg">
+              <h1>Jquery</h1>
+              <p>Carrossel Responsivo Vertical com jquery</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a> 
+            </article>
+            
+            <article class="itemBox css3"> 
+              <img src="images/botao-pulsa.jpg">
+              <h1>Css</h1>
+              <p>
+                  <a href="#" target="_blank" title="Botão Pulse com Css">Botão Pulse com Css</a>
+              </p> 
+            </article>
+           
+            <article class="itemBox wordpress"> 
+              <img src="images/wordpress.jpg">
+              <h1>WordPress</h1>
+              <p>Paginação sem usar Plugin</p>
+              <a href="#" target="_blank" title="Veja mais"> Veja mais</a>  
+            </article>
+            <article class="itemBox html5"> 
+               
+              <img src="images/html-em.jpg"> 
+              <h1>Html</h1>
+              <p>Onde e quando usamos a tags em no html</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a> 
+ 
+            
+            </article>
+            <article class="itemBox jquery"> 
+              <img src="images/mascara-nos-inputs-do-formulario-com-jquery-mask.jpg">
+              <h1>Jquery</h1>
+              <p>Máscara nos Inputs do Formulário Com jQuery Mask</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a>
+            </article>
+            <article class="itemBox javascript"> 
+              <img src="images/galeria-de-fotos-lightbox.jpg">
+              <h1>Javascript</h1>
+              <p>Galeria de Fotos Lightbox</p>
+              <a href="#" target="_blank" title="Veja mais"> Veja mais</a> 
+            
+            </article>
+            <article class="itemBox css3"> 
+              <img src="images/botao-css-hover-efeito-reflexo.jpg">
+              <h1>Css</h1>
+              <p> 
+                <a href="#" target="_blank" title="Botão Css – Hover Efeito Reflexo">Botão Css – Hover Efeito Reflexo</a>
+              </p>
+            </article>
+            <article class="itemBox javascript"> 
+              <img src="images/como-deixar-o-menu-fixo-ao-rolar-pagina.jpg">
+              <h1>Javascript</h1>
+              <p>Como deixar o Menu Fixo ao Rolar página</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a> 
+            
+            </article>
+            <article class="itemBox wordpress"> 
+              <img src="images/nuvem-de-tags-wp.jpg">
+              <h1>WordPress</h1>
+              <p>Nuvem de tags sem usar Plugin em wordpress</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a>
+            </article>
+            <article class="itemBox css3"> 
+              <img src="images/botao-efeito-flutuante-com-css.jpg">
+              <h1>Css</h1>
+              <p>Botão Efeito Flutuante com Css</p> 
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a> 
+            
+            </article>
+            <article class="itemBox html5"> 
+               
+              <img src="images/html-semantico.jpg"> 
+              <h1>Html</h1>
+              <p>Conheça as Tags semântica do html</p>
+              <a href="#" target="_blank" title="Veja mais">Veja mais</a> 
+            
+            </article>
+            
+        </div>
+    
+    </section>
+</body>
+</html>
